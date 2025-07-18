@@ -39,6 +39,11 @@ Python 3
 
 VS Code
 
+## Error in Importing files :
+If you had any problem or error occurred (like: "There's no file named {name of file}")
+Solution : make sure you had the other files (todo.py / rps_game.py / guessbyMe.py) beside the main file (all_in_one.py)
+
+
 
 📚 What I learned
 
