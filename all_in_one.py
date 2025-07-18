@@ -75,12 +75,16 @@ def action_calculate():
                     
             if first_choice == "1":
                 calculate_bmi()
+                break
                         
             elif first_choice == "2":
                 calculator()
+                break
+                
             
             elif first_choice == "3":
                 calculate_age()
+                break
             
             elif first_choice == "4":
                 restart()
@@ -296,8 +300,8 @@ def calculator():
                     print("Please enter 'yes' or 'no'.")
                 
             if  again != "yes":
-                print("Goodbye!")
-                break
+                calculate_menu()
+                action_calculate()
             
             else:
                 continue
@@ -315,7 +319,7 @@ def calculate_age():
             while True:
                 try:
                     
-                    year = int(input("What's your date of birth?: "))
+                    year = int(input("Enter the year of your birth: "))
                     
                 except ValueError:
                     print("Invalid input! try again.")
